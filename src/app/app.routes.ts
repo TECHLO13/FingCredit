@@ -1,15 +1,12 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 import { ClientsListeComponent } from './clients-liste/clients-liste.component';
 import { DetailsclientComponent } from './detailsclient/detailsclient.component';
+import { LoginFormComponent } from './login-form/login-form.component';
 
-const routes: Routes = [
-  { path: '', component: ClientsListeComponent },
-  { path: 'details', component: DetailsclientComponent }
+export const routes: Routes = [
+  { path: 'login', component: LoginFormComponent },
+  { path: 'listeclient', component: ClientsListeComponent },
+  { path: 'details', component: DetailsclientComponent },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: '**', redirectTo: '/login' }
 ];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule {}

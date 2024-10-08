@@ -1,67 +1,46 @@
-/* ici on n'a le css de notre component(formulairee de connexion) */
-
-.section-connexion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
+.gradient-custom-2 {
+    background: #4caf50;
+    background: -webkit-linear-gradient(to right, #4caf50, #aab2b8);
+    background: linear-gradient(to right, #4caf50, #aab2b8);
 }
 
-.conteneur-connexion {
-    background-color: #ffffff;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    text-align: center;
+@media (min-width: 768px) {
+    .gradient-form {
+        height: 8vh;
+    }
 }
 
-h2 {
-    margin-bottom: 20px;
-    color: #333;
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+    }
 }
 
-.groupe-champs {
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    color: #555;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-input[type="text"],
-input[type="password"] {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    transition: border 0.3s;
-}
-
-input[type="text"]:focus,
-input[type="password"]:focus {
-    border-color: #28a745;
-    outline: none;
-}
-
-.bouton-soumettre {
-    background-color: #28a745;
-    color: white;
-    padding: 12px;
+.card {
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-    transition: background-color 0.3s;
-    font-size: 16px;
+    border-radius: 0.5rem;
+    overflow: hidden;
 }
 
-.bouton-soumettre:hover {
-    background-color: #218838;
+.card-body {
+    padding: 2rem;
+}
+
+.form-control {
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+.btn-primary {
+    background-color: #388e3c;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #2e7d32;
+}
+
+.text-muted {
+    color: #6c757d;
 }

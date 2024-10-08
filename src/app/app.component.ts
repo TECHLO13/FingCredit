@@ -8,6 +8,8 @@ import { FormEmpruntsecondComponent } from './form-empruntsecond/form-empruntsec
 import { FormEmpruntThirdComponent } from './form-emprunt-third/form-emprunt-third.component';
 import { ClientsListeComponent } from './clients-liste/clients-liste.component';
 import { DetailsclientComponent } from './detailsclient/detailsclient.component';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -22,7 +24,11 @@ import { DetailsclientComponent } from './detailsclient/detailsclient.component'
     FormEmpruntThirdComponent,
     ClientsListeComponent,
 
-DetailsclientComponent
+DetailsclientComponent,
+FormsModule,
+CommonModule
+
+
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
