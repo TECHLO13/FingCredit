@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>État Civil de l'Emprunteur</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="suivi-dossier">
+                <p>Suivi du dossier</p>
+                <p>Numéro du dossier : <span></span></p>
+                <p>Initiateur : <span>UTILISATEUR 01</span></p>
+            </div>
+            <div class="agence">
+                <p>Agence du dossier : <span>Agence XYZ</span></p>
+                <p>État du dossier : <span>EN COURS</span></p>
+                <p>Saisie le : <span>18/12/2020</span></p>
+            </div>
+        </header>
+
+
+        <h1>Pré-instruction de crédits</h1>
+
+        <form class="etat-civil-form">
+            <!-- <h2>1ère étape : état civil de l'emprunteur</h2> -->
+
+            <!-- Identifiant -->
+            <fieldset>
+                <legend>État civil</legend>
+
+                <label for="identifiant">Identifiant:</label>
+                <input type="text" id="identifiant" name="identifiant">
+
+                <label for="denomination">Dénomination:</label>
+                <select id="denomination" name="denomination">
+                    <option>MONSIEUR</option>
+                    <option>MADAME</option>
+                </select>
+
+                <label for="nom">Nom de famille:</label>
+                <input type="text" id="nom" name="nom" value="DURAND">
+
+                <label for="prenom">Prénom:</label>
+                <input type="text" id="prenom" name="prenom" value="FRANCOIS">
+
+                <label for="date-naissance">Date de naissance:</label>
+                <input type="date" id="date-naissance" name="date-naissance">
+
+                <label for="lieu-naissance">Lieu de naissance:</label>
+                <input type="text" id="lieu-naissance" name="lieu-naissance" value="FRANCE">
+
+                <label for="nationalite">Pays de nationalité:</label>
+                <input type="text" id="nationalite" name="nationalite" value="FRANCE">
+            </fieldset>
+
+            <!-- Adresse légale -->
+            <fieldset>
+                <legend>Adresse légale</legend>
+
+                <label for="numero-rue">Numéro et nom de la voie:</label>
+                <input type="text" id="numero-rue" name="numero-rue" value="2 RUE DU GENERAL">
+
+                <label for="code-postal">Code postal:</label>
+                <input type="text" id="code-postal" name="code-postal" value="33000">
+
+                <label for="ville">Ville:</label>
+                <input type="text" id="ville" name="ville" value="BORDEAUX">
+
+                <label for="pays">Pays:</label>
+                <input type="text" id="pays" name="pays" value="FRANCE">
+            </fieldset>
+
+            <!-- Données familiales -->
+            <fieldset>
+                <legend>Données familiales</legend>
+
+                <label for="situation-familiale">Situation de famille:</label>
+                <input type="text" id="situation-familiale" name="situation-familiale" value="MARIÉ">
+
+                <label for="nb-enfants">Nombre d’enfants à charge:</label>
+                <input type="number" id="nb-enfants" name="nb-enfants">
+            </fieldset>
+
+            <!-- Coordonnées -->
+            <fieldset>
+                <legend>Coordonnées</legend>
+
+                <label for="telephone">Numéro de téléphone portable:</label>
+                <input type="tel" id="telephone" name="telephone" value="0655337777">
+
+                <label for="opt-in">OPT IN:</label>
+                <select id="opt-in" name="opt-in">
+                    <option>Oui</option>
+                    <option>Non</option>
+                </select>
+
+                <label for="email">Adresse email:</label>
+                <input type="email" id="email" name="email" value="francois.durand@gmail.com">
+
+                <label for="date-naissance-enfants">Date naissance enfants:</label>
+                <input type="date" id="date-naissance-enfants" name="date-naissance-enfants">
+            </fieldset>
+
+            <!-- Buttons -->
+            <div class="buttons">
+                <button type="button">Étape précédente</button>
+                <button type="submit">Étape suivante</button>
+                <button type="button" class="abandon">Abandonner</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3ème étape : budget</title>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <div class="suivi-dossier">
+                <p>Suivi du dossier</p>
+                <p>Numéro du dossier : <span></span></p>
+                <p>Initiateur : <span>UTILISATEUR 01</span></p>
+            </div>
+            <div class="agence">
+                <p>Agence du dossier : <span>Agence XYZ</span></p>
+                <p>État du dossier : <span>EN COURS</span></p>
+                <p>Saisie le : <span>18/12/2020</span></p>
+            </div>
+        </header>
+
+        <h1>Pré-instruction de crédits</h1>
+        <nav class="tabs">
+            <!-- <a href="#">État civil</a>
+            <a href="#">Données commerciales et co-emprunteur</a>
+            <a href="#" class="active">Budget</a> -->
+            <p>Connaissez-vous quel sera le montant total à racheter ?</p>
+        </nav>
+
+        <form class="budget-form">
+            <h2>Connaissez-vous quel sera le montant total à racheter ?</h2>
+
+
+            <fieldset>
+                <legend>Revenus</legend>
+
+                <label for="salaire-emprunteur">Salaire net emprunteur:</label>
+                <input type="text" id="salaire-emprunteur" name="salaire-emprunteur" value="2500,00">
+
+                <label for="salaire-co-emprunteur">Salaire net co-emprunteur:</label>
+                <input type="text" id="salaire-co-emprunteur" name="salaire-co-emprunteur">
+
+                <label for="prestations-familiales">Prestations familiales:</label>
+                <input type="text" id="prestations-familiales" name="prestations-familiales">
+
+                <label for="revenus-fonciers">Revenus fonciers:</label>
+                <input type="text" id="revenus-fonciers" name="revenus-fonciers">
+
+                <label for="pension-emprunteur">Pension emprunteur:</label>
+                <input type="text" id="pension-emprunteur" name="pension-emprunteur">
+
+                <label for="autres-revenus">Autres revenus:</label>
+                <input type="text" id="autres-revenus" name="autres-revenus">
+
+                <label for="pension-alimentaire">Pension alimentaire perçue:</label>
+                <input type="text" id="pension-alimentaire" name="pension-alimentaire">
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Charges externes</legend>
+
+                <label for="loyer">Loyer hors charges:</label>
+                <input type="text" id="loyer" name="loyer" value="250,00">
+
+                <label for="mnt-credit">Montant API:</label>
+                <input type="text" id="mnt-credit" name="mnt-credit" value="150,00">
+
+                <label for="pret-initial">Prêt initial:</label>
+                <input type="text" id="pret-initial" name="pret-initial" value="325,00">
+
+                <label for="pret-en-cours">Prêt en cours 1:</label>
+                <input type="text" id="pret-en-cours" name="pret-en-cours" value="308,94">
+
+                <div class="checkbox-group">
+                    <label for="rachat-1">Rachat 1:</label>
+                    <input type="checkbox" id="rachat-1" name="rachat-1">
+                </div>
+
+                <div class="checkbox-group">
+                    <label for="rachat-2">Rachat 2:</label>
+                    <input type="checkbox" id="rachat-2" name="rachat-2">
+                </div>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Charges internes</legend>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Référence de dossier</th>
+                            <th>Agence</th>
+                            <th>Capital restant dû</th>
+                            <th>Dernière échéance</th>
+                            <th>Mensualité</th>
+                            <th>Rachat</th>
+                            <th>Impayés</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" id="reference-dossier" name="reference-dossier"></td>
+                            <td><input type="text" id="agence" name="agence"></td>
+                            <td><input type="text" id="capital-restant" name="capital-restant"></td>
+                            <td><input type="date" id="derniere-echeance" name="derniere-echeance"></td>
+                            <td><input type="text" id="mensualite" name="mensualite"></td>
+                            <td><input type="text" id="rachat" name="rachat"></td>
+                            <td><input type="text" id="impayes" name="impayes"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+
+            <div class="total-section">
+                <label for="montant-total">Montant total à racheter:</label>
+                <input type="text" id="montant-total" name="montant-total" value="7000,00">
+            </div>
+
+
+            <div class="buttons">
+                <button type="button">Étape précédente</button>
+                <button type="submit">Étape suivante</button>
+                <button type="button" class="abandon">Abandonner</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

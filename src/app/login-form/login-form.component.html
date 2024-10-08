@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="section-connexion">
+        <div class="conteneur-connexion">
+            <h2 *ngIf="information.length > 0">Bienvenue sur le formulaire de connexion</h2>
+            <form class="form-connexion">
+                <div class="groupe-champs">
+                    <label for="nom-utilisateur">Nom d'utilisateur</label>
+                    <input type="text" id="nom-utilisateur" name="nom-utilisateur" required placeholder="Entrez votre nom d'utilisateur">
+                </div>
+                <div class="groupe-champs">
+                    <label for="mot-de-passe">Mot de passe</label>
+                    <input type="password" id="mot-de-passe" name="mot-de-passe" required placeholder="Entrez votre mot de passe">
+                </div>
+                <button type="submit" class="bouton-soumettre">Se connecter</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

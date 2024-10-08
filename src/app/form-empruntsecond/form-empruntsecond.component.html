@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Prêt</title>
+    s
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <div class="suivi-dossier">
+                <p>Suivi du dossier</p>
+                <p>Numéro du dossier : <span></span></p>
+                <p>Initiateur : <span>UTILISATEUR 01</span></p>
+            </div>
+            <div class="agence">
+                <p>Agence du dossier : <span>Agence XYZ</span></p>
+                <p>État du dossier : <span>EN COURS</span></p>
+                <p>Saisie le : <span>18/12/2020</span></p>
+            </div>
+        </header>
+        <h1>Pré-instruction de crédits</h1>
+
+        <form class="credit-form">
+            <h2>Comment avez-vous connu le Crédit Municipal?</h2>
+
+            <!-- Caractéristiques commerciales -->
+            <fieldset>
+                <legend>Caractéristiques commerciales</legend>
+
+                <label for="motif-entree">Motif d’entrée en relation:</label>
+                <select id="motif-entree" name="motif-entree">
+                    <option>Dépliant feuille de paie</option>
+                    <option>Appel téléphonique</option>
+                </select>
+
+                <label for="source">Source de l’instruction:</label>
+                <select id="source" name="source">
+                    <option>Appel téléphonique</option>
+                </select>
+            </fieldset>
+
+            <!-- Activités professionnelles -->
+            <fieldset>
+                <legend>Activités professionnelles</legend>
+
+                <label for="profession">Profession:</label>
+                <input type="text" id="profession" name="profession" value="ISP">
+
+                <label for="nom-employeur">Nom de l’employeur:</label>
+                <input type="text" id="nom-employeur" name="nom-employeur" value="CHU de BORDEAUX">
+
+                <label for="ville">Ville:</label>
+                <input type="text" id="ville" name="ville" value="BORDEAUX">
+
+                <label for="code-postal">Code postal:</label>
+                <input type="text" id="code-postal" name="code-postal" value="33000">
+
+                <label for="fonction">Fonction exercée:</label>
+                <input type="text" id="fonction" name="fonction" value="Fonction publique hospitalière">
+
+                <label for="contrat">Type de contrat:</label>
+                <input type="text" id="contrat" name="contrat" value="Contrat durée indéterminée">
+            </fieldset>
+
+            <!-- Logement -->
+            <fieldset>
+                <legend>Logement</legend>
+
+                <label for="mode-habitation">Mode d’habitation:</label>
+                <input type="text" id="mode-habitation" name="mode-habitation" value="Locataire">
+
+                <label for="date-installation">Date d’installation:</label>
+                <input type="date" id="date-installation" name="date-installation">
+            </fieldset>
+
+            <!-- Données du co-emprunteur -->
+            <fieldset>
+                <legend>Données du co-emprunteur</legend>
+
+                <label for="nom-coemprunteur">Nom:</label>
+                <input type="text" id="nom-coemprunteur" name="nom-coemprunteur" value="DURAND">
+
+                <label for="prenom-coemprunteur">Prénom:</label>
+                <input type="text" id="prenom-coemprunteur" name="prenom-coemprunteur" value="EDUARD">
+
+                <label for="date-naissance-coemprunteur">Date de naissance:</label>
+                <input type="date" id="date-naissance-coemprunteur" name="date-naissance-coemprunteur">
+
+                <label for="pays-coemprunteur">Pays:</label>
+                <input type="text" id="pays-coemprunteur" name="pays-coemprunteur" value="France">
+            </fieldset>
+
+            <!-- Buttons -->
+            <div class="buttons">
+                <button type="button">Étape précédente</button>
+                <button type="submit">Étape suivante</button>
+                <button type="button" class="abandon">Abandonner</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

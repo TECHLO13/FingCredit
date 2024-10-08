@@ -1,0 +1,1244 @@
+{
+    "totalFilteredRecords": 26,
+    "pageItems": [{
+            "id": 1,
+            "accountNo": "000000001",
+            "externalId": "1234",
+            "status": {
+                "id": 300,
+                "code": "clientStatusType.active",
+                "value": "Active"
+            },
+            "subStatus": {
+                "active": false,
+                "mandatory": false
+            },
+            "active": true,
+            "activationDate": [
+                2020,
+                5,
+                21
+            ],
+            "firstname": "Madjey",
+            "lastname": "MENSAH",
+            "displayName": "Madjey MENSAH",
+            "mobileNo": "0613289117",
+            "dateOfBirth": [
+                2020,
+                5,
+                5
+            ],
+            "gender": {
+                "active": false,
+                "mandatory": false
+            },
+            "clientType": {
+                "active": false,
+                "mandatory": false
+            },
+            "clientClassification": {
+                "active": false,
+                "mandatory": false
+            },
+            "isStaff": false,
+            "officeId": 1,
+            "officeName": "Agence centrale siège",
+            "imageId": 1,
+            "imagePresent": true,
+            "timeline": {
+                "submittedOnDate": [
+                    2020,
+                    5,
+                    20
+                ],
+                "submittedByUsername": "mifos",
+                "submittedByFirstname": "App",
+                "submittedByLastname": "Administrator",
+                "activatedOnDate": [
+                    2020,
+                    5,
+                    21
+                ],
+                "activatedByUsername": "mifos",
+                "activatedByFirstname": "App",
+                "activatedByLastname": "Administrator"
+            },
+            "legalForm": {
+                "id": 1,
+                "code": "legalFormType.person",
+                "value": "PERSON"
+            },
+            "clientNonPersonDetails": {
+                "constitution": {
+                    "active": false,
+                    "mandatory": false
+                },
+                "mainBusinessLine": {
+                    "active": false,
+                    "mandatory": false
+                }
+            }
+        },
+        {
+            "id": 8,
+            "accountNo": "000000008",
+            "externalId": "666",
+            "status": {
+                "id": 300,
+                "code": "clientStatusType.active",
+                "value": "Active"
+            },
+            "subStatus": {
+                "active": false,
+                "mandatory": false
+            },
+            "active": true,
+            "activationDate": [
+                2020,
+                5,
+                21
+            ],
+            "firstname": "ADJOVI",
+            "lastname": "ANANI",
+            "displayName": "ADJOVI ANANI",
+            "mobileNo": "0611123444",
+            "dateOfBirth": [
+                2020,
+                5,
+                20
+            ],
+            "gender": {
+                "active": false,
+                "mandatory": false
+            },
+            "clientType": {
+                "active": false,
+                "mandatory": false
+            },
+            "clientClassification": {
+                "active": false,
+                "mandatory": false
+            },
+            "isStaff": false,
+            "officeId": 1,
+            "officeName": "Agence centrale siège",
+            "timeline": {
+                "submittedOnDate": [
+                    2020,
+                    5,
+                    21
+                ],
+                "submittedByUsername": "mifos",
+                "submittedByFirstname": "App",
+                "submittedByLastname": "Administrator",
+                "activatedOnDate": [
+                    2020,
+                    5,
+                    21
+                ],
+                "activatedByUsername": "mifos",
+                "activatedByFirstname": "App",
+                "activatedByLastname": "Administrator"
+            },
+            "savingsAccountId": 2,
+            "legalForm": {
+                "id": 1,
+                "code": "legalFormType.person",
+                "value": "PERSON"
+            },
+            "clientNonPersonDetails": {
+                "constitution": {
+                    "active": false,
+                    "mandatory": false
+                },
+                "mainBusinessLine": {
+                    "active": false,
+                    "mandatory": false
+                }
+            }
+        },
+        {
+            "id": 9,
+            "accountNo": "000000009",
+            "externalId": "4578",
+            "status": {
+                "id": 300,
+                "code": "clientStatusType.active",
+                "value": "Active"
+            },
+            "subStatus": {
+                "active": false,
+                "mandatory": false
+            },
+            "active": true,
+            "activationDate": [
+                2020,
+                5,
+                22
+            ],
+            "firstname": "Anne-Celia",
+            "lastname": "MENSAH",
+            "displayName": "Anne-Celia MENSAH",
+            "mobileNo": "0695544758",
+            "dateOfBirth": [
+                2020,
+                5,
+                4
+            ],
+            "gender": {
+                "active": false,
+                "mandatory": false
+            },
+            "clientType": {
+                "active": false,
+                "mandatory": false
+            },
+            "clientClassification": {
+                "active": false,
+                "mandatory": false
+            },
+            "isStaff": false,
+            "officeId": 1,
+            "officeName": "Agence centrale siège",
+            "timeline": {
+                "submittedOnDate": [
+                    2020,
+                    5,
+                    22
+                ],
+                "submittedByUsername": "mifos",
+                "submittedByFirstname": "App",
+                "submittedByLastname": "Administrator",
+                "activatedOnDate": [
+                    2020,
+                    5,
+                    22
+                ],
+                "activatedByUsername": "mifos",
+                "activatedByFirstname": "App",
+                "activatedByLastname": "Administrator"
+            },
+            "savingsAccountId": 3,
+            "legalForm": {
+                "id": 1,
+                "code": "legalFormType.person",
+                "value": "PERSON"
+            },
+            "clientNonPersonDetails": {
+                "constitution": {
+                    "active": false,
+                    "mandatory": false
+                },
+                "mainBusinessLine": {
+                    "active": false,
+                    "mandatory": false
+                }
+            }
+        },
+        {
+            "id": 10,
+            "accountNo": "000000010",
+            "status": {
+                "id": 300,
+                "code": "clientStatusType.active",
+                "value": "Active"
+            },
+            "subStatus": {
+                "active": false,
+                "mandatory": false
+            },
+            "active": true,
+            "activationDate": [
+                2020,
+                5,
+                27
+            ],
+            "firstname": "CindY",
+            "lastname": "MENSAH",
+            "displayName": "CindY MENSAH",
+            "mobileNo": "0760935468",
+            "dateOfBirth": [
+                2000,
+                2,
+                9
+            ],
+            "gender": {
+                "active": false,
+                "mandatory": false
+            },
+            "clientType": {
+                "active": false,
+                "mandatory": false
+            },
+            "clientClassification": {
+                "active": false,
+                "mandatory": false
+            },
+            "isStaff": false,
+            "officeId": 1,
+            "officeName": "Agence centrale siège",
+            "timeline": {
+                "submittedOnDate": [
+                    2020,
+                    5,
+                    27
+                ],
+                "submittedByUsername": "madjey",
+                "submittedByFirstname": "madjey",
+                "submittedByLastname": "Mensah",
+                "activatedOnDate": [
+                    2020,
+                    5,
+                    27
+                ],
+                "activatedByUsername": "madjey",
+                "activatedByFirstname": "madjey",
+                "activatedByLastname": "Mensah"
+            },
+            "savingsAccountId": 4,
+            "legalForm": {
+                "id": 1,
+                "code": "legalFormType.person",
+                "value": "PERSON"
+            },
+            "clientNonPersonDetails": {
+                "constitution": {
+                    "active": false,
+                    "mandatory": false
+                },
+                "mainBusinessLine": {
+                    "active": false,
+                    "mandatory": false
+                }
+            }
+        },
+        {
+            "id": 16,
+            "accountNo": "000000016",
+            "status": {
+                "id": 300,
+                "code": "clientStatusType.active",
+                "value": "Active"
+            },
+            "subStatus": {
+                "active": false,
+                "mandatory": false
+            },
+            "active": true,
+            "activationDate": [
+                2020,
+                5,
+                27
+            ],
+            "firstname": "Nadia",
+            "lastname": "Adam",
+            "displayName": "Nadia Adam",
+            "mobileNo": "90226655",
+            "dateOfBirth": [
+                2000,
+                1,
+                12
+            ],
+            "gender": {
+                "active": false,
+                "mandatory": false
+            },
+            "clientType": {
+                "active": false,
+                "mandatory": false
+            },
+            "clientClassification": {
+                "active": false,
+                "mandatory": false
+            },
+            "isStaff": false,
+            "officeId": 2,
+            "officeName": "Agence Avedji",
+            "timeline": {
+                "submittedOnDate": [
+                    2020,
+                    5,
+                    27
+                ],
+                "submittedByUsername": "madjey",
+                "submittedByFirstname": "madjey",
+                "submittedByLastname": "Mensah",
+                "activatedOnDate": [
+                    2020,
+                    5,
+                    27
+                ],
+                "activatedByUsername": "madjey",
+                "activatedByFirstname": "madjey",
+                "activatedByLastname": "Mensah"
+            },
+            "savingsAccountId": 5,
+            "legalForm": {
+                "id": 1,
+                "code": "legalFormType.person",
+                "value": "PERSON"
+            },
+            "clientNonPersonDetails": {
+                "constitution": {
+                    "active": false,
+                    "mandatory": false
+                },
+                "mainBusinessLine": {
+                    "active": false,
+                    "mandatory": false
+                }
+            }
+        },
+        {
+            "id": 18,
+            "accountNo": "000000018",
+            "externalId": "1870",
+            "status": {
+                "id": 300,
+                "code": "clientStatusType.active",
+                "value": "Active"
+            },
+            "subStatus": {
+                "active": false,
+                "mandatory": false
+            },
+            "active": true,
+            "activationDate": [
+                2024,
+                7,
+                25
+            ],
+            "firstname": "tonton",
+            "middlename": "pépé",
+            "lastname": "ZAZAM",
+            "displayName": "tonton pépé ZAZAM",
+            "mobileNo": "71543098",
+            "dateOfBirth": [
+                2000,
+                5,
+                14
+            ],
+            "gender": {
+                "id": 18,
+                "name": "Homme",
+                "active": false,
+                "mandatory": false
+            },
+            "clientType": {
+                "id": 20,
+                "name": "Particulier",
+                "active": false,
+                "mandatory": false
+            },
+            "clientClassification": {
+                "id": 22,
+                "name": "Moyenne gamme",
+                "active": false,
+                "mandatory": false
+            },
+            "isStaff": false,
+            "officeId": 2,
+            "officeName": "Agence Avedji",
+            "staffId": 2,
+            "staffName": "Edem, Mensah",
+            "timeline": {
+                "submittedOnDate": [
+                    2024,
+                    7,
+                    25
+                ],
+                "submittedByUsername": "adam",
+                "submittedByFirstname": "nadia",
+                "submittedByLastname": "Adam",
+                "activatedOnDate": [
+                    2024,
+                    7,
+                    25
+                ],
+                "activatedByUsername": "adam",
+                "activatedByFirstname": "nadia",
+                "activatedByLastname": "Adam"
+            },
+            "legalForm": {
+                "id": 1,
+                "code": "legalFormType.person",
+                "value": "PERSON"
+            },
+            "clientNonPersonDetails": {
+                "constitution": {
+                    "active": false,
+                    "mandatory": false
+                },
+                "mainBusinessLine": {
+                    "active": false,
+                    "mandatory": false
+                }
+            }
+        },
+        {
+            "id": 19,
+            "accountNo": "000000019",
+            "externalId": "2376",
+            "status": {
+                "id": 300,
+                "code": "clientStatusType.active",
+                "value": "Active"
+            },
+            "subStatus": {
+                "active": false,
+                "mandatory": false
+            },
+            "active": true,
+            "activationDate": [
+                2024,
+                7,
+                26
+            ],
+            "firstname": "kim",
+            "middlename": "son",
+            "lastname": "KING",
+            "displayName": "kim son KING",
+            "mobileNo": "98632980",
+            "dateOfBirth": [
+                2003,
+                3,
+                12
+            ],
+            "gender": {
+                "id": 18,
+                "name": "Homme",
+                "active": false,
+                "mandatory": false
+            },
+            "clientType": {
+                "id": 20,
+                "name": "Particulier",
+                "active": false,
+                "mandatory": false
+            },
+            "clientClassification": {
+                "id": 22,
+                "name": "Moyenne gamme",
+                "active": false,
+                "mandatory": false
+            },
+            "isStaff": false,
+            "officeId": 2,
+            "officeName": "Agence Avedji",
+            "staffId": 2,
+            "staffName": "Edem, Mensah",
+            "timeline": {
+                "submittedOnDate": [
+                    2024,
+                    7,
+                    26
+                ],
+                "submittedByUsername": "adam",
+                "submittedByFirstname": "nadia",
+                "submittedByLastname": "Adam",
+                "activatedOnDate": [
+                    2024,
+                    7,
+                    26
+                ],
+                "activatedByUsername": "adam",
+                "activatedByFirstname": "nadia",
+                "activatedByLastname": "Adam"
+            },
+            "savingsAccountId": 10,
+            "legalForm": {
+                "id": 1,
+                "code": "legalFormType.person",
+                "value": "PERSON"
+            },
+            "clientNonPersonDetails": {
+                "constitution": {
+                    "active": false,
+                    "mandatory": false
+                },
+                "mainBusinessLine": {
+                    "active": false,
+                    "mandatory": false
+                }
+            }
+        },
+        {
+            "id": 23,
+            "accountNo": "000000023",
+            "externalId": "4490",
+            "status": {
+                "id": 300,
+                "code": "clientStatusType.active",
+                "value": "Active"
+            },
+            "subStatus": {
+                "active": false,
+                "mandatory": false
+            },
+            "active": true,
+            "activationDate": [
+                2024,
+                8,
+                7
+            ],
+            "firstname": "FAN",
+            "middlename": "OBI",
+            "lastname": "DARE",
+            "displayName": "FAN OBI DARE",
+            "mobileNo": "90653287",
+            "dateOfBirth": [
+                2000,
+                8,
+                14
+            ],
+            "gender": {
+                "id": 18,
+                "name": "Homme",
+                "active": false,
+                "mandatory": false
+            },
+            "clientType": {
+                "id": 20,
+                "name": "Particulier",
+                "active": false,
+                "mandatory": false
+            },
+            "clientClassification": {
+                "id": 23,
+                "name": "Haute gamme",
+                "active": false,
+                "mandatory": false
+            },
+            "isStaff": false,
+            "officeId": 2,
+            "officeName": "Agence Avedji",
+            "staffId": 2,
+            "staffName": "Edem, Mensah",
+            "timeline": {
+                "submittedOnDate": [
+                    2024,
+                    8,
+                    7
+                ],
+                "submittedByUsername": "adam",
+                "submittedByFirstname": "nadia",
+                "submittedByLastname": "Adam",
+                "activatedOnDate": [
+                    2024,
+                    8,
+                    7
+                ],
+                "activatedByUsername": "adam",
+                "activatedByFirstname": "nadia",
+                "activatedByLastname": "Adam"
+            },
+            "savingsAccountId": 14,
+            "legalForm": {
+                "id": 1,
+                "code": "legalFormType.person",
+                "value": "PERSON"
+            },
+            "clientNonPersonDetails": {
+                "constitution": {
+                    "active": false,
+                    "mandatory": false
+                },
+                "mainBusinessLine": {
+                    "active": false,
+                    "mandatory": false
+                }
+            }
+        },
+        {
+            "id": 42,
+            "accountNo": "000000042",
+            "externalId": "0984",
+            "status": {
+                "id": 300,
+                "code": "clientStatusType.active",
+                "value": "Active"
+            },
+            "subStatus": {
+                "active": false,
+                "mandatory": false
+            },
+            "active": true,
+            "activationDate": [
+                2024,
+                9,
+                30
+            ],
+            "firstname": "toto",
+            "lastname": "MENSSAN",
+            "displayName": "toto MENSSAN",
+            "mobileNo": "90808082",
+            "dateOfBirth": [
+                2000,
+                4,
+                21
+            ],
+            "gender": {
+                "id": 18,
+                "name": "Homme",
+                "active": false,
+                "mandatory": false
+            },
+            "clientType": {
+                "id": 20,
+                "name": "Particulier",
+                "active": false,
+                "mandatory": false
+            },
+            "clientClassification": {
+                "id": 22,
+                "name": "Moyenne gamme",
+                "active": false,
+                "mandatory": false
+            },
+            "isStaff": false,
+            "officeId": 2,
+            "officeName": "Agence Avedji",
+            "staffId": 1,
+            "staffName": "Ajavon, Elom",
+            "timeline": {
+                "submittedOnDate": [
+                    2024,
+                    9,
+                    30
+                ],
+                "submittedByUsername": "adam",
+                "submittedByFirstname": "nadia",
+                "submittedByLastname": "Adam",
+                "activatedOnDate": [
+                    2024,
+                    9,
+                    30
+                ],
+                "activatedByUsername": "adam",
+                "activatedByFirstname": "nadia",
+                "activatedByLastname": "Adam"
+            },
+            "savingsAccountId": 27,
+            "legalForm": {
+                "id": 1,
+                "code": "legalFormType.person",
+                "value": "PERSON"
+            },
+            "clientNonPersonDetails": {
+                "constitution": {
+                    "active": false,
+                    "mandatory": false
+                },
+                "mainBusinessLine": {
+                    "active": false,
+                    "mandatory": false
+                }
+            }
+        },
+        {
+            "id": 43,
+            "accountNo": "000000043",
+            "externalId": "20000",
+            "status": {
+                "id": 300,
+                "code": "clientStatusType.active",
+                "value": "Active"
+            },
+            "subStatus": {
+                "active": false,
+                "mandatory": false
+            },
+            "active": true,
+            "activationDate": [
+                2024,
+                9,
+                30
+            ],
+            "firstname": "DEDR",
+            "lastname": "RETEUUII",
+            "displayName": "DEDR RETEUUII",
+            "mobileNo": "71439876",
+            "dateOfBirth": [
+                2001,
+                5,
+                28
+            ],
+            "gender": {
+                "id": 18,
+                "name": "Homme",
+                "active": false,
+                "mandatory": false
+            },
+            "clientType": {
+                "id": 20,
+                "name": "Particulier",
+                "active": false,
+                "mandatory": false
+            },
+            "clientClassification": {
+                "id": 23,
+                "name": "Haute gamme",
+                "active": false,
+                "mandatory": false
+            },
+            "isStaff": false,
+            "officeId": 3,
+            "officeName": "Agence Agoè",
+            "timeline": {
+                "submittedOnDate": [
+                    2024,
+                    9,
+                    30
+                ],
+                "submittedByUsername": "adam",
+                "submittedByFirstname": "nadia",
+                "submittedByLastname": "Adam",
+                "activatedOnDate": [
+                    2024,
+                    9,
+                    30
+                ],
+                "activatedByUsername": "adam",
+                "activatedByFirstname": "nadia",
+                "activatedByLastname": "Adam"
+            },
+            "savingsAccountId": 28,
+            "legalForm": {
+                "id": 1,
+                "code": "legalFormType.person",
+                "value": "PERSON"
+            },
+            "clientNonPersonDetails": {
+                "constitution": {
+                    "active": false,
+                    "mandatory": false
+                },
+                "mainBusinessLine": {
+                    "active": false,
+                    "mandatory": false
+                }
+            }
+        },
+        {
+            "id": 17,
+            "accountNo": "000000017",
+            "status": {
+                "id": 300,
+                "code": "clientStatusType.active",
+                "value": "Active"
+            },
+            "subStatus": {
+                "active": false,
+                "mandatory": false
+            },
+            "active": true,
+            "activationDate": [
+                2020,
+                5,
+                29
+            ],
+            "firstname": "Jean",
+            "lastname": "Ferrari",
+            "displayName": "Jean Ferrari",
+            "mobileNo": "81818080",
+            "dateOfBirth": [
+                2000,
+                5,
+                13
+            ],
+            "gender": {
+                "active": false,
+                "mandatory": false
+            },
+            "clientType": {
+                "active": false,
+                "mandatory": false
+            },
+            "clientClassification": {
+                "active": false,
+                "mandatory": false
+            },
+            "isStaff": false,
+            "officeId": 4,
+            "officeName": "Agence Totsi",
+            "staffId": 4,
+            "staffName": "Gbenou, Pierre",
+            "timeline": {
+                "submittedOnDate": [
+                    2020,
+                    5,
+                    29
+                ],
+                "submittedByUsername": "madjey",
+                "submittedByFirstname": "madjey",
+                "submittedByLastname": "Mensah",
+                "activatedOnDate": [
+                    2020,
+                    5,
+                    29
+                ],
+                "activatedByUsername": "madjey",
+                "activatedByFirstname": "madjey",
+                "activatedByLastname": "Mensah"
+            },
+            "legalForm": {
+                "id": 1,
+                "code": "legalFormType.person",
+                "value": "PERSON"
+            },
+            "clientNonPersonDetails": {
+                "constitution": {
+                    "active": false,
+                    "mandatory": false
+                },
+                "mainBusinessLine": {
+                    "active": false,
+                    "mandatory": false
+                }
+            }
+        },
+        {
+            "id": 20,
+            "accountNo": "000000020",
+            "externalId": "5409",
+            "status": {
+                "id": 300,
+                "code": "clientStatusType.active",
+                "value": "Active"
+            },
+            "subStatus": {
+                "active": false,
+                "mandatory": false
+            },
+            "active": true,
+            "activationDate": [
+                2024,
+                7,
+                26
+            ],
+            "firstname": "IRENE",
+            "middlename": "DEAZ",
+            "lastname": "TETE",
+            "displayName": "IRENE DEAZ TETE",
+            "mobileNo": "71590854",
+            "dateOfBirth": [
+                2002,
+                5,
+                19
+            ],
+            "gender": {
+                "id": 18,
+                "name": "Homme",
+                "active": false,
+                "mandatory": false
+            },
+            "clientType": {
+                "id": 20,
+                "name": "Particulier",
+                "active": false,
+                "mandatory": false
+            },
+            "clientClassification": {
+                "id": 22,
+                "name": "Moyenne gamme",
+                "active": false,
+                "mandatory": false
+            },
+            "isStaff": false,
+            "officeId": 4,
+            "officeName": "Agence Totsi",
+            "timeline": {
+                "submittedOnDate": [
+                    2024,
+                    7,
+                    26
+                ],
+                "submittedByUsername": "adam",
+                "submittedByFirstname": "nadia",
+                "submittedByLastname": "Adam",
+                "activatedOnDate": [
+                    2024,
+                    7,
+                    26
+                ],
+                "activatedByUsername": "adam",
+                "activatedByFirstname": "nadia",
+                "activatedByLastname": "Adam"
+            },
+            "legalForm": {
+                "id": 1,
+                "code": "legalFormType.person",
+                "value": "PERSON"
+            },
+            "clientNonPersonDetails": {
+                "constitution": {
+                    "active": false,
+                    "mandatory": false
+                },
+                "mainBusinessLine": {
+                    "active": false,
+                    "mandatory": false
+                }
+            }
+        },
+        {
+            "id": 21,
+            "accountNo": "000000021",
+            "externalId": "8070",
+            "status": {
+                "id": 300,
+                "code": "clientStatusType.active",
+                "value": "Active"
+            },
+            "subStatus": {
+                "active": false,
+                "mandatory": false
+            },
+            "active": true,
+            "activationDate": [
+                2024,
+                7,
+                26
+            ],
+            "firstname": "KOFI",
+            "lastname": "DER",
+            "displayName": "KOFI DER",
+            "mobileNo": "90853470",
+            "dateOfBirth": [
+                1780,
+                4,
+                13
+            ],
+            "gender": {
+                "id": 18,
+                "name": "Homme",
+                "active": false,
+                "mandatory": false
+            },
+            "clientType": {
+                "id": 20,
+                "name": "Particulier",
+                "active": false,
+                "mandatory": false
+            },
+            "clientClassification": {
+                "id": 22,
+                "name": "Moyenne gamme",
+                "active": false,
+                "mandatory": false
+            },
+            "isStaff": false,
+            "officeId": 4,
+            "officeName": "Agence Totsi",
+            "staffId": 4,
+            "staffName": "Gbenou, Pierre",
+            "timeline": {
+                "submittedOnDate": [
+                    2024,
+                    7,
+                    26
+                ],
+                "submittedByUsername": "adam",
+                "submittedByFirstname": "nadia",
+                "submittedByLastname": "Adam",
+                "activatedOnDate": [
+                    2024,
+                    7,
+                    26
+                ],
+                "activatedByUsername": "adam",
+                "activatedByFirstname": "nadia",
+                "activatedByLastname": "Adam"
+            },
+            "savingsAccountId": 11,
+            "legalForm": {
+                "id": 1,
+                "code": "legalFormType.person",
+                "value": "PERSON"
+            },
+            "clientNonPersonDetails": {
+                "constitution": {
+                    "active": false,
+                    "mandatory": false
+                },
+                "mainBusinessLine": {
+                    "active": false,
+                    "mandatory": false
+                }
+            }
+        },
+        {
+            "id": 22,
+            "accountNo": "000000022",
+            "externalId": "6008",
+            "status": {
+                "id": 300,
+                "code": "clientStatusType.active",
+                "value": "Active"
+            },
+            "subStatus": {
+                "active": false,
+                "mandatory": false
+            },
+            "active": true,
+            "activationDate": [
+                2024,
+                7,
+                26
+            ],
+            "firstname": "AMINA",
+            "lastname": "DIDI",
+            "displayName": "AMINA DIDI",
+            "mobileNo": "70985410",
+            "dateOfBirth": [
+                1900,
+                5,
+                18
+            ],
+            "gender": {
+                "id": 18,
+                "name": "Homme",
+                "active": false,
+                "mandatory": false
+            },
+            "clientType": {
+                "id": 20,
+                "name": "Particulier",
+                "active": false,
+                "mandatory": false
+            },
+            "clientClassification": {
+                "id": 22,
+                "name": "Moyenne gamme",
+                "active": false,
+                "mandatory": false
+            },
+            "isStaff": false,
+            "officeId": 4,
+            "officeName": "Agence Totsi",
+            "staffId": 4,
+            "staffName": "Gbenou, Pierre",
+            "timeline": {
+                "submittedOnDate": [
+                    2024,
+                    7,
+                    26
+                ],
+                "submittedByUsername": "adam",
+                "submittedByFirstname": "nadia",
+                "submittedByLastname": "Adam",
+                "activatedOnDate": [
+                    2024,
+                    7,
+                    26
+                ],
+                "activatedByUsername": "adam",
+                "activatedByFirstname": "nadia",
+                "activatedByLastname": "Adam"
+            },
+            "savingsAccountId": 12,
+            "legalForm": {
+                "id": 1,
+                "code": "legalFormType.person",
+                "value": "PERSON"
+            },
+            "clientNonPersonDetails": {
+                "constitution": {
+                    "active": false,
+                    "mandatory": false
+                },
+                "mainBusinessLine": {
+                    "active": false,
+                    "mandatory": false
+                }
+            }
+        },
+        {
+            "id": 24,
+            "accountNo": "000000024",
+            "externalId": "4390",
+            "status": {
+                "id": 300,
+                "code": "clientStatusType.active",
+                "value": "Active"
+            },
+            "subStatus": {
+                "active": false,
+                "mandatory": false
+            },
+            "active": true,
+            "activationDate": [
+                2024,
+                8,
+                9
+            ],
+            "firstname": "KAKA",
+            "middlename": "SAMI",
+            "lastname": "FERRE",
+            "displayName": "KAKA SAMI FERRE",
+            "mobileNo": "71349807",
+            "dateOfBirth": [
+                2005,
+                12,
+                1
+            ],
+            "gender": {
+                "id": 18,
+                "name": "Homme",
+                "active": false,
+                "mandatory": false
+            },
+            "clientType": {
+                "id": 20,
+                "name": "Particulier",
+                "active": false,
+                "mandatory": false
+            },
+            "clientClassification": {
+                "id": 22,
+                "name": "Moyenne gamme",
+                "active": false,
+                "mandatory": false
+            },
+            "isStaff": false,
+            "officeId": 4,
+            "officeName": "Agence Totsi",
+            "staffId": 4,
+            "staffName": "Gbenou, Pierre",
+            "timeline": {
+                "submittedOnDate": [
+                    2024,
+                    8,
+                    9
+                ],
+                "submittedByUsername": "adam",
+                "submittedByFirstname": "nadia",
+                "submittedByLastname": "Adam",
+                "activatedOnDate": [
+                    2024,
+                    8,
+                    9
+                ],
+                "activatedByUsername": "adam",
+                "activatedByFirstname": "nadia",
+                "activatedByLastname": "Adam"
+            },
+            "savingsAccountId": 15,
+            "legalForm": {
+                "id": 1,
+                "code": "legalFormType.person",
+                "value": "PERSON"
+            },
+            "clientNonPersonDetails": {
+                "constitution": {
+                    "active": false,
+                    "mandatory": false
+                },
+                "mainBusinessLine": {
+                    "active": false,
+                    "mandatory": false
+                }
+            }
+        }
+    ]
+}
