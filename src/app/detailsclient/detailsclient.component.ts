@@ -1,4 +1,5 @@
-import { Component, Input, OnChanges } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -6,11 +7,10 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   templateUrl: './detailsclient.component.html',
   styleUrls: ['./detailsclient.component.css'],
-  imports:[CommonModule]
-
+  imports: [CommonModule]
 })
-export class DetailsclientComponent implements OnChanges {
-  @Input() clientId: number | null = null; 
+export class DetailsclientComponent implements OnInit {
+  clientId: number | null = null; 
   clientDetails: any = null;
 
   private jsonData = {
@@ -80,10 +80,14 @@ export class DetailsclientComponent implements OnChanges {
     }]
   };
 
-  ngOnChanges(): void {
-    if (this.clientId !== null) {
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit(): void {
+
+    this.route.queryParams.subscribe(params => {
+      this.clientId = +params['id'];
       this.loadClientDetails();
-    }
+    });
   }
 
   loadClientDetails(): void {

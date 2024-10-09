@@ -1,46 +1,54 @@
 <div class="details-container" *ngIf="clientDetails">
     <h2>Détails du client</h2>
     <table>
-        <tr>
-            <th>Nom</th>
-            <td>{{ clientDetails.firstname }} {{ clientDetails.lastname }}</td>
-        </tr>
-        <tr>
-            <th>Numéro de compte</th>
-            <td>{{ clientDetails.accountNo }}</td>
-        </tr>
-        <tr>
-            <th>ID extérieur</th>
-            <td>{{ clientDetails.externalId }}</td>
-        </tr>
-        <tr>
-            <th>Statut</th>
-            <td>{{ clientDetails.status?.value }}</td>
-        </tr>
-        <tr>
-            <th>Bureau</th>
-            <td>{{ clientDetails.officeName }}</td>
-        </tr>
-        <tr>
-            <th>Mobile</th>
-            <td>{{ clientDetails.mobileNo }}</td>
-        </tr>
-        <tr>
-            <th>Date d'activation</th>
-            <td>{{ clientDetails.activationDate?.[2] }}/{{ clientDetails.activationDate?.[1] }}/{{ clientDetails.activationDate?.[0] }}</td>
-        </tr>
-        <tr>
-            <th>Date de naissance</th>
-            <td>{{ clientDetails.dateOfBirth?.[2] }}/{{ clientDetails.dateOfBirth?.[1] }}/{{ clientDetails.dateOfBirth?.[0] }}</td>
-        </tr>
-        <tr>
-            <th>Date de soumission</th>
-            <td>{{ clientDetails.timeline?.submittedOnDate?.[2] }}/{{ clientDetails.timeline?.submittedOnDate?.[1] }}/{{ clientDetails.timeline?.submittedOnDate?.[0] }}</td>
-        </tr>
-        <tr>
-            <th>Nom d'utilisateur ayant soumis</th>
-            <td>{{ clientDetails.timeline?.submittedByUsername }}</td>
-        </tr>
+        <thead>
+            <tr>
+                <th>Champ</th>
+                <th>Détails</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nom</td>
+                <td>{{ clientDetails.firstname }} {{ clientDetails.lastname }}</td>
+            </tr>
+            <tr>
+                <td>Numéro de compte</td>
+                <td>{{ clientDetails.accountNo }}</td>
+            </tr>
+            <tr>
+                <td>ID extérieur</td>
+                <td>{{ clientDetails.externalId }}</td>
+            </tr>
+            <tr>
+                <td>Statut</td>
+                <td>{{ clientDetails.status?.value }}</td>
+            </tr>
+            <tr>
+                <td>Bureau</td>
+                <td>{{ clientDetails.officeName }}</td>
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <td>{{ clientDetails.mobileNo }}</td>
+            </tr>
+            <tr>
+                <td>Date d'activation</td>
+                <td>{{ clientDetails.activationDate?.[2] }}/{{ clientDetails.activationDate?.[1] }}/{{ clientDetails.activationDate?.[0] }}</td>
+            </tr>
+            <tr>
+                <td>Date de naissance</td>
+                <td>{{ clientDetails.dateOfBirth?.[2] }}/{{ clientDetails.dateOfBirth?.[1] }}/{{ clientDetails.dateOfBirth?.[0] }}</td>
+            </tr>
+            <tr>
+                <td>Date de soumission</td>
+                <td>{{ clientDetails.timeline?.submittedOnDate?.[2] }}/{{ clientDetails.timeline?.submittedOnDate?.[1] }}/{{ clientDetails.timeline?.submittedOnDate?.[0] }}</td>
+            </tr>
+            <tr>
+                <td>Nom d'utilisateur ayant soumis</td>
+                <td>{{ clientDetails.timeline?.submittedByUsername }}</td>
+            </tr>
+        </tbody>
     </table>
 </div>
 

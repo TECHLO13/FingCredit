@@ -1,25 +1,20 @@
-h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #2c3e50;
-    text-align: center;
-}
-
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin: 20px 0;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
 }
 
 th,
 td {
     padding: 12px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border: 1px solid #dddddd;
 }
 
 th {
-    background-color: #2980b9;
+    background-color: #4CAF50;
     color: white;
 }
 
@@ -28,55 +23,5 @@ tr:nth-child(even) {
 }
 
 tr:hover {
-    background-color: #d1e0e0;
-}
-
-.close {
-    cursor: pointer;
-    color: #e74c3c;
-    font-size: 18px;
-    float: right;
-    border: none;
-    background: none;
-}
-
-.close:hover {
-    color: #c0392b;
-}
-
-div.details-container {
-    background-color: #f9f9f9;
-    border: 1px solid #dcdcdc;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    max-width: 600px;
-}
-
-.message {
-    color: #e74c3c;
-    font-weight: bold;
-    text-align: center;
-}
-
-.modal {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    width: 80%;
-    max-width: 500px;
+    background-color: #ddd;
 }
