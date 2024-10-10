@@ -20,7 +20,7 @@ export class LoginFormComponent {
   connexion() {
     if (this.username === 'adam' && this.password === 'nadia') {
       this.isLoggedIn = true;
-      alert(`Connexion réussie ! Bienvenue, ${this.username}`);
+      // alert(`Connexion réussie ! Bienvenue, ${this.username}`);
       this.router.navigate(['/listeclient']);
     } else {
       alert('Identifiants incorrects, veuillez réessayer.');
