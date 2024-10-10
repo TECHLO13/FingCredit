@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+
 import { LoginFormComponent } from './login-form/login-form.component';
 import { RechercheComponent } from './recherche/recherche.component';
 import { CreationdossierComponent } from './creationdossier/creationdossier.component';
@@ -8,8 +11,6 @@ import { FormEmpruntsecondComponent } from './form-empruntsecond/form-empruntsec
 import { FormEmpruntThirdComponent } from './form-emprunt-third/form-emprunt-third.component';
 import { ClientsListeComponent } from './clients-liste/clients-liste.component';
 import { DetailsclientComponent } from './detailsclient/detailsclient.component';
-import { FormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -25,7 +26,7 @@ import { CommonModule } from '@angular/common';
     ClientsListeComponent,
     DetailsclientComponent,
     FormsModule,
-    CommonModule
+    CommonModule,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router'; // Importer RouterModule et Router
 import { ClientsService } from '../clients.service';
 
 @Component({
@@ -8,14 +8,13 @@ import { ClientsService } from '../clients.service';
   standalone: true,
   templateUrl: './clients-liste.component.html',
   styleUrls: ['./clients-liste.component.css'],
-  imports: [CommonModule, RouterModule]
+  imports: [CommonModule, RouterModule] // Assurez-vous que RouterModule est bien importé
 })
 export class ClientsListeComponent implements OnInit {
   clients: any[] = [];
   selectedClientId: number | null = null;
-  isModalOpen: boolean = false;
 
-  constructor(private clientsService: ClientsService) {}
+  constructor(private clientsService: ClientsService, private router: Router) { } // Injecter Router
 
   ngOnInit(): void {
     this.loadClients();
@@ -24,9 +23,8 @@ export class ClientsListeComponent implements OnInit {
   loadClients() {
     this.clientsService.getClients().subscribe(
       (data) => {
-
         if (data.pageItems && Array.isArray(data.pageItems)) {
-          this.clients = data.pageItems; 
+          this.clients = data.pageItems;
         } else {
           console.error('Le format des données n\'est pas valide', data);
         }
@@ -36,5 +34,7 @@ export class ClientsListeComponent implements OnInit {
       }
     );
   }
+
+  // Méthode pour sélectionner un client et le supprimer de la liste
 
 }

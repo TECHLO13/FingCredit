@@ -1,97 +1,40 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-
+import { Detailservice } from '../services/detailservice.service';
 @Component({
   selector: 'app-detailsclient',
   standalone: true,
   templateUrl: './detailsclient.component.html',
   styleUrls: ['./detailsclient.component.css'],
-  imports: [CommonModule]
+  imports: [CommonModule, RouterModule]
 })
 export class DetailsclientComponent implements OnInit {
-  clientId: number | null = null; 
-  clientDetails: any = null;
+  clientDetails: any;
+  clientAccounts: any;
+  clientSummary: any[] = [];
 
-  private jsonData = {
-    "totalFilteredRecords": 26,
-    "pageItems": [{
-      "id": 1,
-      "accountNo": "000000001",
-      "externalId": "1234",
-      "status": {
-        "id": 300,
-        "code": "clientStatusType.active",
-        "value": "Active"
-      },
-      "subStatus": {
-        "active": false,
-        "mandatory": false
-      },
-      "active": true,
-      "activationDate": [2020, 5, 21],
-      "firstname": "Madjey",
-      "lastname": "MENSAH",
-      "displayName": "Madjey MENSAH",
-      "mobileNo": "0613289117",
-      "dateOfBirth": [2020, 5, 5],
-      "gender": {
-        "active": false,
-        "mandatory": false
-      },
-      "clientType": {
-        "active": false,
-        "mandatory": false
-      },
-      "clientClassification": {
-        "active": false,
-        "mandatory": false
-      },
-      "isStaff": false,
-      "officeId": 1,
-      "officeName": "Agence centrale siège",
-      "imageId": 1,
-      "imagePresent": true,
-      "timeline": {
-        "submittedOnDate": [2020, 5, 20],
-        "submittedByUsername": "mifos",
-        "submittedByFirstname": "App",
-        "submittedByLastname": "Administrator",
-        "activatedOnDate": [2020, 5, 21],
-        "activatedByUsername": "mifos",
-        "activatedByFirstname": "App",
-        "activatedByLastname": "Administrator"
-      },
-      "legalForm": {
-        "id": 1,
-        "code": "legalFormType.person",
-        "value": "PERSON"
-      },
-      "clientNonPersonDetails": {
-        "constitution": {
-          "active": false,
-          "mandatory": false
-        },
-        "mainBusinessLine": {
-          "active": false,
-          "mandatory": false
-        }
-      }
-    }]
-  };
-
-  constructor(private route: ActivatedRoute) {}
+  constructor(private detailService: Detailservice, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    const clientId = Number(this.route.snapshot.paramMap.get('id'));
 
-    this.route.queryParams.subscribe(params => {
-      this.clientId = +params['id'];
-      this.loadClientDetails();
+
+    this.detailService.getClientDetails(clientId).subscribe((data: any) => {
+      this.clientDetails = data;
     });
-  }
 
-  loadClientDetails(): void {
-    const client = this.jsonData.pageItems.find(item => item.id === this.clientId);
-    this.clientDetails = client || { message: 'Pas d\'information détaillée trouvée pour cet utilisateur.' };
+
+    this.detailService.getClientAccounts(clientId).subscribe((data: any) => {
+      this.clientAccounts = data;
+    });
+
+    this.detailService.getClientSummary(clientId).subscribe((data: any) => {
+      if (data && data.length > 0) {
+        this.clientSummary = data;
+      } else {
+        console.log('Aucun résumé trouvé');
+      }
+    });
   }
 }

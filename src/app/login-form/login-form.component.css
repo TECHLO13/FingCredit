@@ -1,26 +1,6 @@
-.gradient-custom-2 {
-    background: #4caf50;
-    background: -webkit-linear-gradient(to right, #4caf50, #aab2b8);
-    background: linear-gradient(to right, #4caf50, #aab2b8);
-}
-
-@media (min-width: 768px) {
-    .gradient-form {
-        height: 8vh;
-    }
-}
-
-@media (min-width: 769px) {
-    .gradient-custom-2 {
-        border-top-right-radius: .3rem;
-        border-bottom-right-radius: .3rem;
-    }
-}
-
 .card {
     border: none;
     border-radius: 0.5rem;
-    overflow: hidden;
 }
 
 .card-body {
@@ -41,6 +21,8 @@
     background-color: #2e7d32;
 }
 
-.text-muted {
-    color: #6c757d;
+.error-message {
+    color: red;
+    font-size: 0.875em;
+    margin-top: 0.25rem;
 }

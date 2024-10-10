@@ -1,57 +1,74 @@
-<div class="details-container" *ngIf="clientDetails">
-    <h2>Détails du client</h2>
-    <table>
-        <thead>
+<div class="client-details">
+    <table class="main-table">
+        <!-- Détails du client -->
+        <tr>
+            <th colspan="5" class="section-title">Détails du client</th>
+        </tr>
+        <tr>
+            <th>ID Client</th>
+            <th>Nom complet</th>
+            <th>Numéro de mobile</th>
+            <th>Statut</th>
+            <th>Date d'activation</th>
+        </tr>
+        <tr *ngIf="clientDetails; else noClientDetails">
+            <td>{{ clientDetails.id }}</td>
+            <td>{{ clientDetails.firstname }} {{ clientDetails.lastname }}</td>
+            <td>{{ clientDetails.mobileNo }}</td>
+            <td>{{ clientDetails.status.value }}</td>
+            <td>{{ clientDetails.activationDate | date }}</td>
+        </tr>
+        <ng-template #noClientDetails>
             <tr>
-                <th>Champ</th>
-                <th>Détails</th>
+                <td colspan="5">Pas d'information détaillée trouvée pour cet utilisateur.</td>
             </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Nom</td>
-                <td>{{ clientDetails.firstname }} {{ clientDetails.lastname }}</td>
-            </tr>
-            <tr>
-                <td>Numéro de compte</td>
-                <td>{{ clientDetails.accountNo }}</td>
-            </tr>
-            <tr>
-                <td>ID extérieur</td>
-                <td>{{ clientDetails.externalId }}</td>
-            </tr>
-            <tr>
-                <td>Statut</td>
-                <td>{{ clientDetails.status?.value }}</td>
-            </tr>
-            <tr>
-                <td>Bureau</td>
-                <td>{{ clientDetails.officeName }}</td>
-            </tr>
-            <tr>
-                <td>Mobile</td>
-                <td>{{ clientDetails.mobileNo }}</td>
-            </tr>
-            <tr>
-                <td>Date d'activation</td>
-                <td>{{ clientDetails.activationDate?.[2] }}/{{ clientDetails.activationDate?.[1] }}/{{ clientDetails.activationDate?.[0] }}</td>
-            </tr>
-            <tr>
-                <td>Date de naissance</td>
-                <td>{{ clientDetails.dateOfBirth?.[2] }}/{{ clientDetails.dateOfBirth?.[1] }}/{{ clientDetails.dateOfBirth?.[0] }}</td>
-            </tr>
-            <tr>
-                <td>Date de soumission</td>
-                <td>{{ clientDetails.timeline?.submittedOnDate?.[2] }}/{{ clientDetails.timeline?.submittedOnDate?.[1] }}/{{ clientDetails.timeline?.submittedOnDate?.[0] }}</td>
-            </tr>
-            <tr>
-                <td>Nom d'utilisateur ayant soumis</td>
-                <td>{{ clientDetails.timeline?.submittedByUsername }}</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+        </ng-template>
 
-<div *ngIf="clientDetails?.message" class="message">
-    <p>{{ clientDetails.message }}</p>
+        <!-- Comptes du client -->
+        <tr>
+            <th colspan="5" class="section-title">Comptes du client</th>
+        </tr>
+        <tr>
+            <th>Numéro de compte</th>
+            <th>Nom du produit</th>
+            <th>Type de prêt</th>
+            <th>Montant du prêt</th>
+            <th>Balance</th>
+        </tr>
+        <tr *ngFor="let account of clientAccounts?.loanAccounts">
+            <td>{{ account?.accountNo }}</td>
+            <td>{{ account?.productName }}</td>
+            <td>{{ account?.loanType?.value }}</td>
+            <td>{{ account?.originalLoan | currency }}</td>
+            <td>{{ account?.loanBalance | currency }}</td>
+        </tr>
+
+        <tr *ngIf="!(clientAccounts?.loanAccounts?.length)">
+            <td colspan="5">Aucun compte trouvé pour cet utilisateur.</td>
+        </tr>
+
+        <!-- Résumé du client -->
+        <tr>
+            <th colspan="5" class="section-title">Résumé du client</th>
+        </tr>
+        <tr>
+            <th>Cycle de prêt</th>
+            <th>Prêts actifs</th>
+            <th>Dernier montant de prêt</th>
+            <th>Comptes d'épargne actifs</th>
+            <th>Total des économies</th>
+        </tr>
+        <tr *ngIf="clientSummary && clientSummary.length > 0; else noClientSummary">
+            <td>{{ clientSummary[0].loanCycle }}</td>
+            <td>{{ clientSummary[0].activeLoans }}</td>
+            <td>{{ clientSummary[0].lastLoanAmount | currency }}</td>
+            <td>{{ clientSummary[0].activeSavings }}</td>
+            <td>{{ clientSummary[0].totalSavings | currency }}</td>
+        </tr>
+        <ng-template #noClientSummary>
+            <tr>
+                <td colspan="5">Pas de résumé trouvé pour cet utilisateur.</td>
+            </tr>
+        </ng-template>
+    </table>
 </div>

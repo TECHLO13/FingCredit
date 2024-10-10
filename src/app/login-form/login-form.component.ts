@@ -14,16 +14,27 @@ export class LoginFormComponent {
   username: string = '';
   password: string = '';
   isLoggedIn: boolean = false;
+  usernameError: string | null = null;
+  passwordError: string | null = null;
 
   constructor(private router: Router) {}
 
   connexion() {
+
+    this.usernameError = null;
+    this.passwordError = null;
+
     if (this.username === 'adam' && this.password === 'nadia') {
       this.isLoggedIn = true;
-      // alert(`Connexion réussie ! Bienvenue, ${this.username}`);
       this.router.navigate(['/listeclient']);
     } else {
-      alert('Identifiants incorrects, veuillez réessayer.');
+    
+      if (this.username !== 'adam') {
+        this.usernameError = 'Nom d\'utilisateur incorrect.';
+      }
+      if (this.password !== 'nadia') {
+        this.passwordError = 'Mot de passe incorrect.';
+      }
     }
   }
 }

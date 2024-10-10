@@ -10,7 +10,8 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let client of clients" [routerLink]="['/details']" [queryParams]="{ id: client.id }">
+        <tr *ngFor="let client of clients" [routerLink]="['/details', client.id]">
+            <!-- Modifié ici -->
             <td>{{ client.firstname }} {{ client.lastname }}</td>
             <td>{{ client.accountNo }}</td>
             <td>{{ client.externalId }}</td>

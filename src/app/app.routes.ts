@@ -6,7 +6,7 @@ import { LoginFormComponent } from './login-form/login-form.component';
 export const routes: Routes = [
   { path: 'login', component: LoginFormComponent },
   { path: 'listeclient', component: ClientsListeComponent },
-  { path: 'details', component: DetailsclientComponent },
+  { path: 'details/:id', component: DetailsclientComponent }, 
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: '**', redirectTo: '/login' }
 ];
