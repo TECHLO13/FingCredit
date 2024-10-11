@@ -1,87 +1,83 @@
+/* Styles pour le tableau */
+
 table {
     width: 100%;
     border-collapse: collapse;
+    /* Évite les espaces entre les cellules */
     margin: 20px 0;
-    font-size: 16px;
-    font-family: Arial, sans-serif;
-}
-
-th,
-td {
-    padding: 12px;
-    text-align: left;
-    border: 1px solid #dddddd;
-}
-
-th {
-    background-color: #4CAF50;
-    color: white;
-}
-
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-tr:hover {
-    background-color: #ddd;
-}
-
-.header {
-    margin-bottom: 20px;
-}
-
-.search input {
-    padding: 10px;
-    margin-right: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.search button {
-    padding: 10px 15px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.search button:hover {
-    background-color: #45a049;
-}
-
-.modal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-}
-
-.modal-content {
-    background-color: white;
-    padding: 20px;
+    /* Marge en haut et en bas */
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    width: 80%;
-    max-width: 600px;
+    /* Coins arrondis */
+    overflow: hidden;
+    /* Cache les bords arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Ombre légère */
 }
 
-.close {
-    cursor: pointer;
-    color: #e74c3c;
-    font-size: 24px;
-    float: right;
-    border: none;
-    background: none;
-    transition: color 0.3s ease;
+
+/* Styles pour les en-têtes */
+
+th.mat-header-cell {
+    background-color: #4CAF50;
+    /* Couleur de fond verte */
+    color: white;
+    /* Couleur du texte blanche */
+    padding: 15px;
+    /* Espacement à l'intérieur des cellules */
+    text-align: left;
+    /* Alignement du texte à gauche */
+    font-weight: bold;
+    /* Gras */
+    border-bottom: 3px solid #388E3C;
+    /* Bordure en bas plus foncée */
 }
 
-.close:hover {
-    color: #c0392b;
+
+/* Styles pour les cellules */
+
+td.mat-cell {
+    padding: 15px;
+    /* Espacement à l'intérieur des cellules */
+    border-bottom: 1px solid #ddd;
+    /* Bordure en bas des cellules */
+    background-color: white;
+    /* Fond blanc pour les cellules */
+    transition: background-color 0.3s;
+    /* Transition pour l'effet de survol */
+}
+
+
+/* Styles pour les lignes au survol */
+
+tr.mat-row:hover {
+    background-color: #f1f8e9;
+    /* Couleur de fond claire au survol */
+}
+
+
+/* Styles pour les colonnes */
+
+.mat-column-nom,
+.mat-column-client,
+.mat-column-idExterieur,
+.mat-column-etatAvancement,
+.mat-column-bureau,
+.mat-column-personnel {
+    font-weight: normal;
+    /* Style normal pour le texte */
+}
+
+
+/* Styles pour les liens */
+
+a {
+    color: #4CAF50;
+    /* Couleur des liens verte */
+    text-decoration: none;
+    /* Enlève le soulignement des liens */
+}
+
+a:hover {
+    text-decoration: underline;
+    /* Soulignement au survol */
 }

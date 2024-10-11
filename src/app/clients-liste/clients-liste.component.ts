@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Router, RouterModule } from '@angular/router'; // Importer RouterModule et Router
+import { Router, RouterModule } from '@angular/router';
+import { MatTableModule } from '@angular/material/table'; // Importer MatTableModule
+import { MatSortModule } from '@angular/material/sort'; // Importer MatSortModule
 import { ClientsService } from '../clients.service';
 
 @Component({
@@ -8,13 +10,13 @@ import { ClientsService } from '../clients.service';
   standalone: true,
   templateUrl: './clients-liste.component.html',
   styleUrls: ['./clients-liste.component.css'],
-  imports: [CommonModule, RouterModule] // Assurez-vous que RouterModule est bien importé
+  imports: [CommonModule, RouterModule, MatTableModule, MatSortModule] // Assurez-vous d'importer les modules ici
 })
 export class ClientsListeComponent implements OnInit {
   clients: any[] = [];
   selectedClientId: number | null = null;
 
-  constructor(private clientsService: ClientsService, private router: Router) { } // Injecter Router
+  constructor(private clientsService: ClientsService, private router: Router) { }
 
   ngOnInit(): void {
     this.loadClients();
@@ -34,7 +36,4 @@ export class ClientsListeComponent implements OnInit {
       }
     );
   }
-
-  // Méthode pour sélectionner un client et le supprimer de la liste
-
 }

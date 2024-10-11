@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+// import { Detailservice } from '../services/detailservice.service'; // Vérifie le chemin d'accès
 import { Detailservice } from '../services/detailservice.service';
 @Component({
   selector: 'app-detailsclient',
@@ -36,5 +37,20 @@ export class DetailsclientComponent implements OnInit {
         console.log('Aucun résumé trouvé');
       }
     });
+  }
+  step = 1; // Étape courante
+
+  // Passer à l'étape précédente
+  previousStep() {
+      if (this.step > 1) {
+          this.step--;
+      }
+  }
+
+  // Passer à l'étape suivante
+  nextStep() {
+      if (this.step < 3) {
+          this.step++;
+      }
   }
 }

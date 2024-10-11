@@ -1,23 +1,52 @@
-<table>
-    <thead>
-        <tr>
-            <th>Nom</th>
-            <th>Client</th>
-            <th>Id extérieur</th>
-            <th>État d'avancement</th>
-            <th>Bureau</th>
-            <th>Personnel</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let client of clients" [routerLink]="['/details', client.id]">
-            <!-- Modifié ici -->
-            <td>{{ client.firstname }} {{ client.lastname }}</td>
-            <td>{{ client.accountNo }}</td>
-            <td>{{ client.externalId }}</td>
-            <td>{{ client.status.value }}</td>
-            <td>{{ client.officeName }}</td>
-            <td>{{ client.isStaff }}</td>
-        </tr>
-    </tbody>
+<table mat-table [dataSource]="clients" matSort>
+    <!-- Nom -->
+    <ng-container matColumnDef="nom">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Nom</th>
+        <td mat-cell *matCellDef="let client" [routerLink]="['/details', client.id]">
+            {{ client.firstname }} {{ client.lastname }}
+        </td>
+    </ng-container>
+
+    <!-- Client -->
+    <ng-container matColumnDef="client">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Client</th>
+        <td mat-cell *matCellDef="let client" [routerLink]="['/details', client.id]">
+            {{ client.accountNo }}
+        </td>
+    </ng-container>
+
+    <!-- Id extérieur -->
+    <ng-container matColumnDef="idExterieur">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Id extérieur</th>
+        <td mat-cell *matCellDef="let client" [routerLink]="['/details', client.id]">
+            {{ client.externalId }}
+        </td>
+    </ng-container>
+
+    <!-- État d'avancement -->
+    <ng-container matColumnDef="etatAvancement">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>État d'avancement</th>
+        <td mat-cell *matCellDef="let client" [routerLink]="['/details', client.id]">
+            {{ client.status.value }}
+        </td>
+    </ng-container>
+
+    <!-- Bureau -->
+    <ng-container matColumnDef="bureau">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Bureau</th>
+        <td mat-cell *matCellDef="let client" [routerLink]="['/details', client.id]">
+            {{ client.officeName }}
+        </td>
+    </ng-container>
+
+    <!-- Personnel -->
+    <ng-container matColumnDef="personnel">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Personnel</th>
+        <td mat-cell *matCellDef="let client" [routerLink]="['/details', client.id]">
+            {{ client.isStaff ? 'Oui' : 'Non' }}
+        </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="['nom', 'client', 'idExterieur', 'etatAvancement', 'bureau', 'personnel']"></tr>
+    <tr mat-row *matRowDef="let row; columns: ['nom', 'client', 'idExterieur', 'etatAvancement', 'bureau', 'personnel'];"></tr>
 </table>

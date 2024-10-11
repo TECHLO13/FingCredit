@@ -1,0 +1,133 @@
+<div class="simulation-container">
+    <h2 class="form-title">Simulation de Prêt</h2>
+
+    <form class="client-details">
+        <div class="form-row">
+
+            <!-- Détails du Client -->
+            <mat-card class="section-card">
+                <mat-card-title class="section-title">Détails du Client</mat-card-title>
+                <mat-card-content>
+                    <div class="form-group">
+                        <label for="clientId">ID Client :</label>
+                        <input type="text" id="clientId" [(ngModel)]="simulationData.clientId" name="clientId" value="12345" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="clientName">Nom :</label>
+                        <input type="text" id="clientName" [(ngModel)]="simulationData.clientName" name="clientName" value="Jean Dupont" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="accountNo">Numéro de Compte :</label>
+                        <input type="text" id="accountNo" [(ngModel)]="simulationData.accountNo" name="accountNo" value="987654321" disabled>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+
+            <!-- Détails du Prêt -->
+            <mat-card class="section-card">
+                <mat-card-title class="section-title">Détails du Prêt</mat-card-title>
+                <mat-card-content>
+                    <div class="form-group">
+                        <label for="principal">Montant Principal :</label>
+                        <input type="number" id="principal" [(ngModel)]="simulationData.principal" name="principal" value="84273.97">
+                    </div>
+                    <div class="form-group">
+                        <label for="termFrequency">Durée :</label>
+                        <input type="number" id="termFrequency" [(ngModel)]="simulationData.termFrequency" name="termFrequency" value="20">
+                    </div>
+                    <div class="form-group">
+                        <label for="annualInterestRate">Taux d'intérêt :</label>
+                        <input type="number" id="annualInterestRate" [(ngModel)]="simulationData.annualInterestRate" name="annualInterestRate" value="5.5">
+                    </div>
+                </mat-card-content>
+            </mat-card>
+
+            <!-- Autres Détails -->
+            <mat-card class="section-card">
+                <mat-card-title class="section-title">Autres Détails</mat-card-title>
+                <mat-card-content>
+                    <div class="form-group">
+                        <label for="loanProductName">Type de Prêt :</label>
+                        <input type="text" id="loanProductName" [(ngModel)]="simulationData.loanProductName" name="loanProductName" value="Prêt Personnel">
+                    </div>
+                    <div class="form-group">
+                        <label for="loanPurposeName">But du Prêt :</label>
+                        <input type="text" id="loanPurposeName" [(ngModel)]="simulationData.loanPurposeName" name="loanPurposeName" value="Achat Maison">
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+
+        <!-- Détails de la Période -->
+        <mat-card class="section-card">
+            <mat-card-title class="section-title">Détails de la Période</mat-card-title>
+            <mat-card-content>
+                <div class="form-group">
+                    <label for="period">Période :</label>
+                    <input type="number" id="period" [(ngModel)]="simulationData.period" name="period" [value]="simulationData.period">
+                </div>
+                <div class="form-group">
+                    <label for="fromDate">Date de Début :</label>
+                    <input type="number" placeholder="Année" [(ngModel)]="simulationData.fromDate[0]" name="fromDateYear" value="2026">
+                    <input type="number" placeholder="Mois" [(ngModel)]="simulationData.fromDate[1]" name="fromDateMonth" value="5">
+                    <input type="number" placeholder="Jour" [(ngModel)]="simulationData.fromDate[2]" name="fromDateDay" value="5">
+                </div>
+                <div class="form-group">
+                    <label for="dueDate">Date d'Échéance :</label>
+                    <input type="number" placeholder="Année" [(ngModel)]="simulationData.dueDate[0]" name="dueDateYear" value="2026">
+                    <input type="number" placeholder="Mois" [(ngModel)]="simulationData.dueDate[1]" name="dueDateMonth" value="6">
+                    <input type="number" placeholder="Jour" [(ngModel)]="simulationData.dueDate[2]" name="dueDateDay" value="5">
+                </div>
+                <div class="form-group">
+                    <label for="daysInPeriod">Jours dans la Période :</label>
+                    <input type="number" id="daysInPeriod" [(ngModel)]="simulationData.daysInPeriod" name="daysInPeriod" value="31">
+                </div>
+            </mat-card-content>
+        </mat-card>
+
+        <!-- Détails des Paiements -->
+        <mat-card class="section-card">
+            <mat-card-title class="section-title">Détails des Paiements</mat-card-title>
+            <mat-card-content>
+                <div class="form-group">
+                    <label for="principalOriginalDue">Montant Principal Original Dû :</label>
+                    <input type="number" id="principalOriginalDue" [(ngModel)]="simulationData.principalOriginalDue" name="principalOriginalDue" value="84273.97">
+                </div>
+                <div class="form-group">
+                    <label for="principalDue">Montant Principal Dû :</label>
+                    <input type="number" id="principalDue" [(ngModel)]="simulationData.principalDue" name="principalDue" value="84273.97">
+                </div>
+                <div class="form-group">
+                    <label for="principalPaid">Montant Principal Payé :</label>
+                    <input type="number" id="principalPaid" [(ngModel)]="simulationData.principalPaid" name="principalPaid" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="totalDueForPeriod">Total Dû pour la Période :</label>
+                    <input type="number" id="totalDueForPeriod" [(ngModel)]="simulationData.totalDueForPeriod" name="totalDueForPeriod" value="119000">
+                </div>
+                <div class="form-group">
+                    <label for="totalOutstandingForPeriod">Total Restant Dû pour la Période :</label>
+                    <input type="number" id="totalOutstandingForPeriod" [(ngModel)]="simulationData.totalOutstandingForPeriod" name="totalOutstandingForPeriod" value="119000">
+                </div>
+            </mat-card-content>
+        </mat-card>
+
+        <!-- Détails des Autres Informations -->
+        <mat-card class="section-card">
+            <mat-card-title class="section-title">Autres Informations</mat-card-title>
+            <mat-card-content>
+                <div class="form-group">
+                    <label for="minimumGap">Écart Minimum :</label>
+                    <input type="number" id="minimumGap" [(ngModel)]="simulationData.minimumGap" name="minimumGap" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="maximumGap">Écart Maximum :</label>
+                    <input type="number" id="maximumGap" [(ngModel)]="simulationData.maximumGap" name="maximumGap" value="10000">
+                </div>
+            </mat-card-content>
+        </mat-card>
+
+        <!-- Bouton de Simulation -->
+        <!-- <button type="submit" (click)="simulateLoan()" class="simulate-button">Simuler le Prêt</button> -->
+    </form>
+</div>
