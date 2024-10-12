@@ -28,8 +28,10 @@ th.mat-header-cell {
     /* Alignement du texte à gauche */
     font-weight: bold;
     /* Gras */
-    border-bottom: 3px solid #388E3C;
+    border-bottom: 2px solid #388E3C;
     /* Bordure en bas plus foncée */
+    text-transform: uppercase;
+    /* Texte en majuscules */
 }
 
 
@@ -42,6 +44,8 @@ td.mat-cell {
     /* Bordure en bas des cellules */
     background-color: white;
     /* Fond blanc pour les cellules */
+    color: #333;
+    /* Couleur du texte */
     transition: background-color 0.3s;
     /* Transition pour l'effet de survol */
 }
@@ -50,7 +54,7 @@ td.mat-cell {
 /* Styles pour les lignes au survol */
 
 tr.mat-row:hover {
-    background-color: #f1f8e9;
+    background-color: #e8f5e9;
     /* Couleur de fond claire au survol */
 }
 
@@ -75,9 +79,86 @@ a {
     /* Couleur des liens verte */
     text-decoration: none;
     /* Enlève le soulignement des liens */
+    transition: color 0.3s;
+    /* Transition pour la couleur */
 }
 
 a:hover {
     text-decoration: underline;
     /* Soulignement au survol */
+    color: #388E3C;
+    /* Couleur plus foncée au survol */
+}
+
+
+/* Styles pour le paginator */
+
+.mat-paginator {
+    margin: 20px 0;
+    /* Marge pour le paginator */
+    justify-content: flex-end;
+    /* Alignement à droite */
+}
+
+
+/* Styles pour les en-têtes */
+
+::ng-deep th.mat-header-cell {
+    background-color: #4CAF50 !important;
+    /* Couleur de fond verte */
+    color: white !important;
+    /* Couleur du texte blanche */
+    padding: 15px;
+    /* Espacement à l'intérieur des cellules */
+    text-align: left;
+    /* Alignement du texte à gauche */
+    font-weight: bold;
+    /* Gras */
+    border-bottom: 2px solid #388E3C;
+    /* Bordure en bas plus foncée */
+    text-transform: uppercase;
+    /* Texte en majuscules */
+}
+
+
+/* Styles pour les cellules */
+
+::ng-deep td.mat-cell {
+    padding: 15px;
+    /* Espacement à l'intérieur des cellules */
+    border-bottom: 1px solid #ddd;
+    /* Bordure en bas des cellules */
+    background-color: white;
+    /* Fond blanc pour les cellules */
+    color: #333;
+    /* Couleur du texte */
+    transition: background-color 0.3s;
+    /* Transition pour l'effet de survol */
+}
+
+
+/* Styles pour les lignes au survol */
+
+::ng-deep tr.mat-row:hover {
+    background-color: #e8f5e9;
+    /* Couleur de fond claire au survol */
+}
+
+
+/* Styles pour les liens */
+
+::ng-deep a {
+    color: #4CAF50;
+    /* Couleur des liens verte */
+    text-decoration: none;
+    /* Enlève le soulignement des liens */
+    transition: color 0.3s;
+    /* Transition pour la couleur */
+}
+
+::ng-deep a:hover {
+    text-decoration: underline;
+    /* Soulignement au survol */
+    color: #388E3C;
+    /* Couleur plus foncée au survol */
 }
